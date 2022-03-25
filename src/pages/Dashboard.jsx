@@ -2,6 +2,7 @@ import React from "react";
 import CardList from "../component/Dashboard/CardList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BalanceSummery from "../component/Dashboard/BalanceSummery";
+import TopProductsList from "../component/Dashboard/TopProductsList";
 
 const Dashboard = () => {
     const dataList = [
@@ -25,6 +26,41 @@ const Dashboard = () => {
         },
     ];
 
+    const TopProducts = [
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+        {
+            name: "Iphone 8 pro",
+            price: "1200",
+        },
+    ];
+
     return (
         <div className=" mt-2">
             <h1 className=" text-2xl font-semibold">Dashboard</h1>
@@ -36,8 +72,9 @@ const Dashboard = () => {
                     <CardList cards={dataList} />
                 </div>
                 {/* right side  */}
-                <div className=" w-4/12">
-                  <BalanceSummery />
+                <div className=" w-4/12 flex flex-col gap-y-base-lg">
+                    <BalanceSummery />
+                    <TopProductsList list={TopProducts} />
                 </div>
             </div>
         </div>
