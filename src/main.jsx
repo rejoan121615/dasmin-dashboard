@@ -14,6 +14,10 @@ import {
     faAngleDown,
     faSearch,
     faCaretDown,
+    faHandHoldingDollar,
+    faCircleDollarToSlot,
+    faUsers,
+    faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -25,7 +29,11 @@ library.add(
     faMessage,
     faAngleDown,
     faSearch,
-    faCaretDown
+    faCaretDown,
+    faHandHoldingDollar,
+    faCircleDollarToSlot,
+    faUsers,
+    faPlus
 );
 
 ReactDOM.render(

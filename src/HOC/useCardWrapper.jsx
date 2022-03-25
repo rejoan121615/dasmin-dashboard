@@ -1,12 +1,11 @@
 import React from "react";
 
 const useCardWrapper = (CardContent) => {
-    return class NewComponent extends React.Component {
-        // render method
+    return class NewElement extends React.Component {
         render() {
             return (
-                <div>
-                    <CardContent {...props} />
+                <div className="bg-white px-8 py-8 rounded-lg shadow">
+                    <CardContent {...this.props} />
                 </div>
             );
         }
