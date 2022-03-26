@@ -14,7 +14,8 @@ module.exports = {
             gap: {
                 'base-lg': '25px',
                 'base-lg': '32px',
-            }
+            },
+            
 
         },
     },

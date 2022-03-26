@@ -5,6 +5,8 @@ import BalanceSummery from "../component/Dashboard/BalanceSummery";
 import TopProductsList from "../component/Dashboard/TopProductsList";
 import SalesChart from "../component/Dashboard/SalesChart";
 import moment from "moment";
+import RecentOrderList from "../component/Dashboard/RecentOrderList";
+import OrderByDeviceChart from "../component/Dashboard/OrderByDeviceChart";
 
 const Dashboard = () => {
     const dataList = [
@@ -108,13 +110,45 @@ const Dashboard = () => {
             },
         ],
     };
+
+    // recent orders data
+    const recentOrdersData = [
+        {
+            proName: "Appple airpod pro",
+            proPrice: 154.64,
+            customer: "john doe",
+            productId: 659784,
+            status: "pending",
+        },
+        {
+            proName: "redmi note 10s",
+            proPrice: 114.56,
+            customer: "ma aslam",
+            productId: 894652,
+            status: "delivered",
+        },
+        {
+            proName: "razer kraken headset",
+            proPrice: 100.0,
+            customer: "linda sins",
+            productId: 986452,
+            status: "cancelled",
+        },
+        {
+            proName: "iphone 12 pro max",
+            proPrice: 1250.65,
+            customer: "mahfuz sarkar",
+            productId: 321798,
+            status: "delivered",
+        },
+    ];
     return (
         <div className=" mt-2">
             <h1 className=" text-2xl font-semibold">Dashboard</h1>
             {/* top content  */}
-            <div className=" flex gap-x-base-lg">
+            <div className=" flex gap-x-base-lg mb-[32px]">
                 {/* left side  */}
-                <div className=" w-8/12">
+                <div className=" w-8/12 gap-y-base-lg flex flex-col">
                     {/* top cards  */}
                     <CardList cards={dataList} />
                     {/* chart component  */}
@@ -125,6 +159,11 @@ const Dashboard = () => {
                     <BalanceSummery />
                     <TopProductsList list={TopProducts} />
                 </div>
+            </div>
+            {/* bottom content  */}
+            <div className=" flex gap-x-base-lg">
+                <RecentOrderList orderList={recentOrdersData} />
+                <OrderByDeviceChart />
             </div>
         </div>
     );

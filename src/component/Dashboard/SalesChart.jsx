@@ -29,7 +29,7 @@ const SalesChart = (props) => {
                 <select className=" font-semibold capitalize p-2 cursor-pointer" name="" id="">
                     <option value="week">week</option>
                     <option value="month">month</option>
-                    <option selected value="year">year</option>
+                    <option defaultValue="year" value="year">year</option>
                 </select>
             </div>
             {/* bottom chart  */}
