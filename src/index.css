@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.display-1 {
+  @apply font-semibold capitalize text-2xl;
+}

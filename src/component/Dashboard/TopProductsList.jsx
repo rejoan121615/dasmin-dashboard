@@ -3,7 +3,7 @@ import useCardWrapper from "../../HOC/useCardWrapper";
 
 const Product = (props) => {
     return (
-        <div className="flex justify-between my-3 last:mb-0">
+        <div className="flex justify-between my-4 last:mb-0">
             <h6 className=" text-base font-semibold capitalize">
                 {props.name}
             </h6>
