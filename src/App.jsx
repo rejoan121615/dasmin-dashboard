@@ -9,13 +9,13 @@ const App = () => {
 
     const RespNavHandler = () => {
         setLeftNav(!leftNav);
-    }
+    };
 
     return (
         <React.Fragment>
             <div className=" lg:flex bg-main-bg">
                 {/* responsive left sidebar  */}
-                {leftNav && <RespLeftNavBar />}
+                {leftNav && <RespLeftNavBar back={RespNavHandler} />}
                 {/* left side navbar  */}
                 <div className=" bg-white lg:w-1/6 xl:w-2/12 hidden xl:block">
                     <LeftNavbar />
