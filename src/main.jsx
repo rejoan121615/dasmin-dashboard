@@ -18,6 +18,7 @@ import {
     faCircleDollarToSlot,
     faUsers,
     faPlus,
+    faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -33,7 +34,8 @@ library.add(
     faHandHoldingDollar,
     faCircleDollarToSlot,
     faUsers,
-    faPlus
+    faPlus,
+    faBars
 );
 
 ReactDOM.render(

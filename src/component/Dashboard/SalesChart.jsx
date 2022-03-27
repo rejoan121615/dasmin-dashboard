@@ -7,11 +7,11 @@ const SalesChart = (props) => {
     return (
         <div className="">
             {/* top texts  */}
-            <div className=" flex items-center justify-between mb-5">
-                <div className="flex">
-                    <h1 className="display-1 mr-20">sales</h1>
+            <div className=" flex flex-col items-center justify-between mb-5 sm:flex-row">
+                <div className="flex justify-between w-full sm:w-7/12">
+                    <h1 className="display-1 lg:mr-20">sales</h1>
                     <div className="flex">
-                        <div className="flex items-center mr-8">
+                        <div className="flex items-center mr-4 lg:mr-8">
                             <span className=" w-3 h-3 inline-block rounded-full bg-primary mr-2"></span>
                             <h3 className=" text-base capitalize font-semibold">
                                 income

@@ -22,7 +22,7 @@ const Icon = (props) => {
 
 const UserArea = () => {
     return (
-        <div className=" flex justify-between max-w-[280px] w-full">
+        <div className=" flex justify-between max-w-[280px] w-full order-1">
             <Icon icon="bell" notification={true} />
             <Icon icon="message" notification={false} />
             {/* user bar  */}

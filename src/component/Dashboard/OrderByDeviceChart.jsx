@@ -5,12 +5,12 @@ import { Chart } from "react-chartjs-2";
 
 const OrderByDeviceChart = () => {
     return (
-        <div className=" flex flex-col justify-between h-full">
+        <div className=" flex flex-col justify-between h-full gap-y-4">
             {/* title  */}
             <h1 className=" display-1">order by device</h1>
 
             {/* donut charts  */}
-            <div className=" w-3/6 mx-auto">
+            <div className=" w-4/6 mx-auto max-w-[210px]">
                 <Chart
                     type="doughnut"
                     options={{
@@ -64,4 +64,4 @@ const OrderByDeviceChart = () => {
     );
 };
 
-export default useCardWrapper(OrderByDeviceChart, "w-5/12");
+export default useCardWrapper(OrderByDeviceChart, " w-full lg:w-5/12");

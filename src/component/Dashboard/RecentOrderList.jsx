@@ -17,23 +17,22 @@ const OrderList = (props) => {
     }
 
     return (
-        <div className="flex py-2 last:pb-0">
-            <h6 className="text-base font-semibold capitalize w-3/12">
+        <div className="flex flex-wrap gap-x-2 gap-y-2 py-2 last:pb-0 sm:gap-x-0">
+            <h6 className="text-base font-semibold capitalize sm:w-[28%]">
                 {props.proName}
             </h6>
-            <h6 className="text-base font-semibold capitalize w-3/12">
-                {props.productId}
-            </h6>
-
-            <h6 className="text-base font-semibold capitalize w-3/12">
+            <h6 className="text-base font-semibold capitalize sm:w-[20%]">
                 {props.customer}
             </h6>
-            <h6 className="text-base font-semibold capitalize w-2/12">
+            <h6 className="text-base font-semibold capitalize sm:w-[17%]">
+                {props.productId}
+            </h6>
+            <h6 className="text-base font-semibold capitalize sm:w-[17%]">
                 {props.proPrice}
             </h6>
             <h6
                 style={{ color: statusColor }}
-                className="text-base font-semibold capitalize w-1/12"
+                className="text-base font-semibold capitalize sm:w-[18%]"
             >
                 {props.status}
             </h6>
@@ -46,20 +45,20 @@ const RecentOrderList = (props) => {
         <div>
             <h1 className=" display-1 mb-6">recent orders</h1>
             {/* top list  */}
-            <div className=" flex border-b pb-3">
-                <h6 className=" text-base font-semibold capitalize w-3/12">
+            <div className=" flex border-b pb-3 flex-wrap gap-x-2 gap-y-2 sm:gap-x-0">
+                <h6 className=" text-base font-semibold capitalize sm:w-[28%]">
                     product name
                 </h6>
-                <h6 className=" text-base font-semibold capitalize w-3/12">
+                <h6 className=" text-base font-semibold capitalize sm:w-[20%]">
                     customer
                 </h6>
-                <h6 className=" text-base font-semibold capitalize w-3/12">
+                <h6 className=" text-base font-semibold capitalize sm:w-[17%]">
                     product id
                 </h6>
-                <h6 className=" text-base font-semibold capitalize w-2/12">
+                <h6 className=" text-base font-semibold capitalize sm:w-[17%]">
                     price
                 </h6>
-                <h6 className=" text-base font-semibold capitalize w-1/12">
+                <h6 className=" text-base font-semibold capitalize sm:w-[18%]">
                     status
                 </h6>
             </div>
@@ -72,4 +71,4 @@ const RecentOrderList = (props) => {
     );
 };
 
-export default useCardWrapper(RecentOrderList, "w-7/12");
+export default useCardWrapper(RecentOrderList, "w-full lg:w-7/12");

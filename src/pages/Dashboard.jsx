@@ -160,22 +160,30 @@ const Dashboard = () => {
         <div className=" mt-2">
             <h1 className=" text-2xl font-semibold">Dashboard</h1>
             {/* top content  */}
-            <div className=" flex gap-x-base-lg mb-[32px]">
+            <div className=" flex flex-col mb-6 gap-y-6 gap-x-base-lg lg:mb-[32px]">
                 {/* left side  */}
-                <div className=" w-8/12 gap-y-base-lg flex flex-col">
+                <div
+                    className=" w-12/12 gap-y-5 lg:gap-y-base-lg flex flex-col
+                lg:w-8/12"
+                >
                     {/* top cards  */}
                     <CardList cards={dataList} />
                     {/* chart component  */}
                     <SalesChart options={chartOptions} data={chartData} />
                 </div>
                 {/* right side  */}
-                <div className=" w-4/12 flex flex-col gap-y-base-lg">
+                <div
+                    className=" w-full flex flex-col gap-y-base-lg
+                                sm:grid sm:grid-cols-2 sm:gap-x-6
+                                lg:w-4/12
+                "
+                >
                     <BalanceSummery />
                     <TopProductsList list={TopProducts} />
                 </div>
             </div>
             {/* bottom content  */}
-            <div className=" flex gap-x-base-lg">
+            <div className=" flex flex-col gap-x-base-lg gap-y-6">
                 <RecentOrderList orderList={recentOrdersData} />
                 <OrderByDeviceChart />
             </div>

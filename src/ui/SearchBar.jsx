@@ -9,7 +9,7 @@ const SearchBar = () => {
     };
 
     return (
-        <div className=" bg-half-paste px-3 flex items-center rounded-3xl py-2 overflow-hidden">
+        <div className=" order-2 bg-[#c1c4cc38] w-full px-3 flex items-center rounded-3xl py-2 overflow-hidden">
             <FontAwesomeIcon
                 icon="search"
                 className=" text-semi-white mx-2 text-xl"
