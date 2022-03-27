@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const PortalsElement = (props) => {
+
+    
     return (
-        <div className=" w-screen h-screen bg-[#00000085] fixed left-0 top-0 ">
-        <div>
-          
-            </div>
+        <div className=" w-screen h-full min-h-screen bg-[#00000085] fixed left-0 top-0 ">
+            {props.children}
         </div>
     );
 };
