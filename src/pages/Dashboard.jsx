@@ -65,7 +65,7 @@ const Dashboard = () => {
         },
     ];
 
-    // charts options  -------------------
+    // sales charts options  -------------------
     const chartOptions = {
         elements: {
             point: {
@@ -78,7 +78,7 @@ const Dashboard = () => {
             },
         },
     };
-    // charts data -------------------
+    // sales charts data -------------------
     const chartData = {
         labels: [...moment.monthsShort()],
         datasets: [
@@ -133,6 +133,20 @@ const Dashboard = () => {
             customer: "linda sins",
             productId: 986452,
             status: "cancelled",
+        },
+        {
+            proName: "iphone 12 pro max",
+            proPrice: 1250.65,
+            customer: "mahfuz sarkar",
+            productId: 321798,
+            status: "delivered",
+        },
+        {
+            proName: "iphone 12 pro max",
+            proPrice: 1250.65,
+            customer: "mahfuz sarkar",
+            productId: 321798,
+            status: "delivered",
         },
         {
             proName: "iphone 12 pro max",

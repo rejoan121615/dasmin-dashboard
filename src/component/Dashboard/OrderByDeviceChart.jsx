@@ -5,34 +5,40 @@ import { Chart } from "react-chartjs-2";
 
 const OrderByDeviceChart = () => {
     return (
-        <div>
+        <div className=" flex flex-col justify-between h-full">
             {/* title  */}
             <h1 className=" display-1">order by device</h1>
 
             {/* donut charts  */}
-
-            <Chart
-                type="doughnut"
-                options={{
-                    cutout: 200,
-                }}
-                data={{
-                    labels: ["Red", "Blue", "Yellow"],
-                    datasets: [
-                        {
-                            label: "My First Dataset",
-                            data: [300, 50, 100],
-                            backgroundColor: [
-                                "rgb(255, 99, 132)",
-                                "rgb(54, 162, 235)",
-                                "rgb(255, 205, 86)",
-                            ],
-                            hoverOffset: 4,
-                        },
-                    ],
-                }}
-            />
-
+            <div className=" w-3/6 mx-auto">
+                <Chart
+                    type="doughnut"
+                    options={{
+                        cutout: 75,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                       
+                    }}
+                    data={{
+                        labels: ["Red", "Blue", "Yellow"],
+                        datasets: [
+                            {
+                                label: "My First Dataset",
+                                data: [300, 50, 100],
+                                backgroundColor: [
+                                    "rgb(255, 99, 132)",
+                                    "rgb(54, 162, 235)",
+                                    "rgb(255, 205, 86)",
+                                ],
+                                
+                            },
+                        ],
+                    }}
+                />
+            </div>
             {/* legend list  */}
             <div className="flex justify-center">
                 <div className="flex items-center mr-8">
