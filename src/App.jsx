@@ -12,11 +12,11 @@ const App = () => {
                 {/* responsive left sidebar  */}
                 {/* <ResponsiveNavBar /> */}
                 {/* left side navbar  */}
-                <div className=" bg-white lg:w-3/12 xl:w-2/12 hidden lg:block">
+                <div className=" bg-white lg:w-1/6 xl:w-2/12 hidden xl:block">
                     <LeftNavbar />
                 </div>
                 {/* right side content */}
-                <div className=" w-full lg:w-9/12 xl:w-10/12 p-5 xl:p-6 2xl:p-8">
+                <div className=" w-full xl:w-5/6 p-5 xl:p-6 2xl:p-8">
                     <TopBar />
                     {/* <Switch> */}
                     <Route path="/">

@@ -5,7 +5,7 @@ import useCardWrapper from "../../HOC/useCardWrapper";
 
 const SalesChart = (props) => {
     return (
-        <div className="">
+        <div className=" lg:h-full lg:flex lg:flex-col lg:justify-between">
             {/* top texts  */}
             <div className=" flex flex-col items-center justify-between mb-5 sm:flex-row">
                 <div className="flex justify-between w-full sm:w-7/12">
@@ -43,4 +43,4 @@ const SalesChart = (props) => {
     );
 };
 
-export default useCardWrapper(SalesChart);
+export default useCardWrapper(SalesChart, 'lg:h-full');

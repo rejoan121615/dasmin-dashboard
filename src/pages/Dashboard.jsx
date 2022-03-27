@@ -158,13 +158,16 @@ const Dashboard = () => {
     ];
     return (
         <div className=" mt-2">
-            <h1 className=" text-2xl font-semibold">Dashboard</h1>
+            <h1 className=" text-2xl font-semibold my-6 md:my-8 2xl:my-10">Dashboard</h1>
             {/* top content  */}
-            <div className=" flex flex-col mb-6 gap-y-6 gap-x-base-lg lg:mb-[32px]">
+            <div className="
+                    flex flex-col mb-6 gap-y-6 gap-x-base-lg lg:mb-[32px]
+                    lg:flex-row
+            ">
                 {/* left side  */}
                 <div
                     className=" w-12/12 gap-y-5 lg:gap-y-base-lg flex flex-col
-                lg:w-8/12"
+                lg:w-8/12 "
                 >
                     {/* top cards  */}
                     <CardList cards={dataList} />
@@ -175,7 +178,7 @@ const Dashboard = () => {
                 <div
                     className=" w-full flex flex-col gap-y-base-lg
                                 sm:grid sm:grid-cols-2 sm:gap-x-6
-                                lg:w-4/12
+                                lg:w-4/12 lg:grid-cols-1
                 "
                 >
                     <BalanceSummery />
@@ -183,7 +186,7 @@ const Dashboard = () => {
                 </div>
             </div>
             {/* bottom content  */}
-            <div className=" flex flex-col gap-x-base-lg gap-y-6">
+            <div className=" flex flex-col gap-x-base-lg gap-y-6 lg:flex-row">
                 <RecentOrderList orderList={recentOrdersData} />
                 <OrderByDeviceChart />
             </div>

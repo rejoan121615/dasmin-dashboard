@@ -71,4 +71,4 @@ const RecentOrderList = (props) => {
     );
 };
 
-export default useCardWrapper(RecentOrderList, "w-full lg:w-7/12");
+export default useCardWrapper(RecentOrderList, "w-full lg:w-8/12");

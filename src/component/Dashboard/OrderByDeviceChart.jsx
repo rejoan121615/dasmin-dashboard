@@ -64,4 +64,4 @@ const OrderByDeviceChart = () => {
     );
 };
 
-export default useCardWrapper(OrderByDeviceChart, " w-full lg:w-5/12");
+export default useCardWrapper(OrderByDeviceChart, " w-full lg:w-4/12");
